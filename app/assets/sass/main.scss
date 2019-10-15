@@ -61,7 +61,7 @@
   padding:40px 16px;
   margin: 32px 0;
   position: relative;
-  overflow: hidden;
+ // overflow: hidden;//
 
 }
 
@@ -79,6 +79,13 @@
   color: $color_nhsuk-black;
   -webkit-font-smoothing:antialiased;
 
+}
+
+.colour-item__swatch{
+border: 1px solid transparent;
+border-radius:50%;
+height: 80px;
+width: 80px;
 }
 
 
