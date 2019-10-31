@@ -58,3 +58,25 @@ a{
   }
 }
 }
+.nhsuk-heading-links-container{
+  display: flex;
+  font-size: .1px;
+  padding: 8px 0;
+  align-items: baseline;
+}
+
+.nhsuk-heading-links{
+  vertical-align: middle;
+  min-height: 40px;
+  line-height: 40px;
+
+}
+
+.nhsuk-heading-links ul{
+  display: inline-flex;
+  margin: auto 32px;
+  li{
+    margin: 0 32px;
+  }
+
+}
