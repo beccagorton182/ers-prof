@@ -30,7 +30,18 @@
 
 
 // Add your extra styles here...
+.result-table {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
+.result-table th
+,.result-table td
+{
+  border: 0 !important;
+  padding: 0 !important;
+  font-weight:normal;
+}
 
 .nhsuk-sub-navigation__item {
   font-family: "nta", Arial, sans-serif;

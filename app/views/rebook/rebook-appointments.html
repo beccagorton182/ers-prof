@@ -74,7 +74,8 @@ NHS e-referral Service
 {% endblock %}
 {% block content %}
 
-<div class="nhsuk-grid-row nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6">
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
   <div class="nhsuk-grid-column-full">
     <div class="nhsuk-back-link">
       <a class="nhsuk-back-link__link" href="search-results">
@@ -84,8 +85,36 @@ NHS e-referral Service
         </svg>
         Go back to search results</a>
     </div>
+  </div>
+</div>
 
-    <h1>Choose an appointment</h1>
+<div class="nhsuk-inset-text">
+<p>Current appointment:</p>
+<div class="nhsuk-list">
+    <p><strong>The Yorkshire Clinic</strong></p>
+    <p class="nhsuk-hint">Adult Hernia Repair NHS Clinic - The Yorkshire Clinic - NVC</p>
+
+        <table class="result-table">
+          <tbody>
+            <tr>
+              <th><strong>Date</strong></th>
+              <th><strong>Time</strong></th>
+            </tr>
+            <tr>
+              <th>Thursday 4th November 2019</th>
+              <td>9:00am</td>
+            </tr>
+           
+        
+          </tbody>
+        </table>
+      </div>
+
+</div>
+
+<div class="nhsuk-grid-row nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-6">
+  <div class="nhsuk-grid-column-full"></div>
+    <h2 class="nhsuk-heading-l">Choose an appointment</h2>
 
     <div class="nhsuk-grid-column-two-thirds">
       <h2><a href="">The Yorkshire Clinic</a> </h2>
@@ -105,18 +134,18 @@ NHS e-referral Service
         <tbody class="nhsuk-table__body">
           <tr class="nhsuk-table__row">
             <td class="nhsuk-table__cell">Thursday 4th November <span class="nhsuk-tag__success">First available</span></td>
-            <td class="nhsuk-table__cell ">9:00am</td>
-            <td class="nhsuk-table__cell "><a href="referral-review">Book appointment</a></td>
+            <td class="nhsuk-table__cell ">10:00am</td>
+            <td class="nhsuk-table__cell "><a href="rebook-review">Book appointment</a></td>
           </tr>
           <tr class="nhsuk-table__row">
             <td class="nhsuk-table__cell">Thursday 4th November</td>
             <td class="nhsuk-table__cell ">15:00pm</td>
-            <td class="nhsuk-table__cell "><a href="referral-review">Book appointment</a></td>
+            <td class="nhsuk-table__cell "><a href="/errors/errors-no-appointments">Book appointment</a></td>
           </tr>
           <tr class="nhsuk-table__row">
             <td class="nhsuk-table__cell">Friday 5th November</td>
             <td class="nhsuk-table__cell ">9:00am</td>
-            <td class="nhsuk-table__cell "><a href="referral-review">Book appointment</a></td>
+            <td class="nhsuk-table__cell "><a href="/errors/errors-no-response">Book appointment</a></td>
           </tr>
           <tr class="nhsuk-table__row">
             <td class="nhsuk-table__cell">Friday 5th November</td>
@@ -231,7 +260,7 @@ NHS e-referral Service
         <tbody class="nhsuk-table__body">
           <tr class="nhsuk-table__row">
             <td class="nhsuk-table__cell "><strong>There are no slots available for this service</strong></td>
-            <td class="nhsuk-table__cell "><a href="defer-review">Defer booking to provider</a></td>
+            <td class="nhsuk-table__cell "><a href="rebook-defer-reasons">Defer booking to provider</a></td>
           </tr>
         </tbody>
       </table>

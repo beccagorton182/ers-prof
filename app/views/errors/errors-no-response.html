@@ -6,6 +6,7 @@
 {% block pageScripts %}
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/auto.js"></script>
+<script type="text/javascript" src="/js/radio-choice.js"></script>
 {% endblock %}
 {% block pageTitle %}
 NHS e-referral Service
@@ -60,94 +61,48 @@ NHS e-referral Service
 
 </header>
 <!-- SUB MENU PATIENT INFO -->
+
 <nav class="nhsuk-grey-background patient-info">
   <ul role="navigation">
     <li><span style=""><strong>UBRN: </strong> 3452 1007 6779</span></li>
-    <li><strong>Patient: </strong><a href="Patient name">EVANS, David (Mr)</a></li>
+    <li>Patient: <a href="Patient name">EVANS, David (Mr)</a></li>
     <li><strong>Gender: </strong> Male</li>
     <li>30 years (4 June 1988)</li>
   </ul>
+  <div class="nhsuk-close">
+    <a class="" href="/summary/referral-summary">Close
+      <svg class="nhsuk-icon nhsuk-icon--ers nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+</svg></a>
+
+  </div>
 </nav>
 {% endblock %}
+
 {% block content %}
 
-<div class="nhsuk-grid-row nhsuk-u-margin-top-4">
-  
-  <div class="nhsuk-grid-column-full">
+<div class="nhsuk-grid-row nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-6">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-back-link">
+        <a class="nhsuk-back-link__link" href="/rebook/rebook-appointments">
+          <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+          </svg>
+          Go back to choose an appointment</a>
+      </div>
+<h2>Sorry, the service’s system is currently unavailable </h2>
 
-    <div class="panel panel-border-wide alert-success">
+<h4>What to do now</h4>
+<p>You can try to <a href="/rebook/rebook-appointments">choose an appointment </a> again</p>
+<p>You can select another service, or contact your support desk</p>
+        <p>You can also <a href="/rebook/rebook-defer-reasons">defer this booking to the provider</a></p>
+      
+      </div>
+      </div>
+     
 
-      <h1 class="nhsuk-heading-m">
-
-
-          The referral has been deferred to the service provider</h1>
-   
-    </div>
-    </div>
-  </div>
-
-    
-
-  <!-- SIDEBAR ACTIONS -->
-<div class="nhsuk-grid-row">
-  <div class="nhsuk-grid-column-one-quarter nhsuk-sidebar">
-
-
-      <nav class="nhsuk-sidebar-actions">
-        <ul>
-          <li><a href="email-booking">Email referral instructions<svg class="nhsuk-icon nhsuk-icon__chevron-right .nhsuk-icon--ers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-  </svg></a></li>
-  <li><a href="print-this-page">Print referral instructions <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-  </svg></a></li>
-  
-          <li><a href="#">Add referral letter<svg class="nhsuk-icon nhsuk-icon__chevron-right .nhsuk-icon--ers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-  </svg></a></li>
-  
-          <li><a href="referral-summary">View referral summary<svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-  </svg></a></li>
-        </ul>
-  
-      </nav>
-    </div>
-  
-  
-
-    <div class="nhsuk-grid-column-three-quarters">
-        
-          <div class="nhsuk-list">
-
-          <h3 class="nhsuk-heading-m">Service provider you have deferred to</h3>
-       
-              <h4 class="nhsuk-heading-s">St James University Hospital</h4>
-              <p class="nhsuk-hint">Hernia-Not Otherwise Specified Leeds TH(St James's Hosp)-RR8</p>
-          
-                  
-                </div>
-                <div class="nhsuk-warning-callout">
-                    <h3 class="nhsuk-warning-callout__label">Service provider will contact the patient</h3>
-                    <p>If the service provider has not contacted the patient to arrange an appointment by 30th November, they need to call the provider directly at 0113 2064933. <br>(Monday - Saturday, 8am to 8pm)</br></p>
-                  </div>
-
-    <h2 class="nhsuk-heading-s">What to do now</h2>
-    <p> You need to provide the patient with the referral instructions</p>
-    <p>You will also need to add the referral letter so the provider knows what the referral is for.</p>
-    
- 
-          
-
-    </div>
-  
-  
-
-</div>
-
-
-
-
+      
 
 {% endblock %}
 
