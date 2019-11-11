@@ -26,19 +26,11 @@
 @import 'components/summary';
 @import 'components/sub-navigation';
 @import 'components/sub-nav.scss';
+@import 'components/service-details.scss';
 
 
 
 // Add your extra styles here...
-
-#service-details {
-  display: none;
-  
-}
-
-.service-details-link {
-  color: #005eb8; 
-}
 
 .result-table {
   margin: 0 !important;
@@ -161,6 +153,14 @@ table td{
   @extend .nhsuk-inset-text;
   border-color: $color_nhsuk-grey-4;
   border-left-width: 10px;
+}
+
+.nhsuk-inset-text--appointment{
+  @extend .nhsuk-inset-text;
+  border-color: $color_nhsuk-grey-4;
+  border-left-width: 10px;
+  margin-top: 0px;
+  padding-bottom: 5px
 }
 
 .nhsuk-header__transactional-service-name{
