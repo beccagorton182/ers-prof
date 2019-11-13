@@ -95,12 +95,6 @@ NHS e-referral Service
               </div>
             </div>
 
-            <div class="panel panel-border-wide alert-default">
-                    <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3">
-                      Missing referral letter / clinical information
-                    </h2>
-              
-                  </div>
             </div>
             </div>
             <div class="nhsuk-panel nhsuk-panel--grey">
@@ -108,7 +102,7 @@ NHS e-referral Service
           <div class="nhsuk-grid-column-three-quarters flex-container">
               
               <div class="flex-child">
-                  <span class="nhsuk-tag__highlight nhsuk-tag-large">BOOKED</span>
+                  <span class="nhsuk-tag__highlight nhsuk-tag-large">NOT YET BOOKED</span>
               </div>
 
           
@@ -130,10 +124,10 @@ NHS e-referral Service
               </button>
               <div id="myDropdown" class="dropdown-content">
   
-                <a href="attachment">Add referral letter</a>
-                <a href="/rebook/rebook-appointments">Rebook appointment</a>
-                <a href="/cancel/cancel-reasons">Cancel appointment</a>
-                <a href="/appointments/search">Change services</a>
+                
+                <a href="/appointments/referral-appointments">Book appointment</a>
+              <a href="/appointments/search">Change service</a>
+              <a href="">Cancel referral</a>
               </div>
             </div>
   
@@ -150,15 +144,7 @@ NHS e-referral Service
     <dl class="app-check-your-answers app-check-your-answers--short app-check-your-answers--no-border">
       <div class="app-check-your-answers__contents">
         <dt class="app-check-your-answers__question">
-          Letter due
-        </dt>
-        <dd class="app-check-your-answers__answer">
-          02 October 2019
-        </dd>
-      </div>
-      <div class="app-check-your-answers__contents">
-        <dt class="app-check-your-answers__question">
-           Service
+           Services
         </dt>
         <dd class="app-check-your-answers__answer">
             <p class="nhsuk-body"><a href="">The Yorkshire Clinic</a></p>
@@ -167,20 +153,34 @@ NHS e-referral Service
       </div>
       <div class="app-check-your-answers__contents">
         <dt class="app-check-your-answers__question">
-         Appointment
-        </dt>
+            
+         </dt>
         <dd class="app-check-your-answers__answer">
-          04 November 2019
+            <p class="nhsuk-body"><a href="">Calderdale Royal Hospital</a></p>
+          <p class="nhsuk-hint">CHFT - MSK Hernia - Calderdale Royal Hospital- RWY</p>
         </dd>
       </div>
       <div class="app-check-your-answers__contents">
         <dt class="app-check-your-answers__question">
-          Clinician
-        </dt>
+            
+         </dt>
         <dd class="app-check-your-answers__answer">
-          ALTAF, Noor (DR)
+            <p class="nhsuk-body"><a href="">St James' University Hospital</a></p>
+          <p class="nhsuk-hint">Hernia-Not Otherwise Specified-Leeds TH(St James's Hosp)-RR8 </p>
         </dd>
       </div>
+      <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+              
+           </dt>
+          <dd class="app-check-your-answers__answer">
+              <p class="nhsuk-body"><a href="">Show full shortlist</a></p>
+            
+          </dd>
+        </div>
+       
+     
+   
       <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Attachments
@@ -205,10 +205,14 @@ NHS e-referral Service
               </tr>
               </tbody>
               </table>
+
+            </dl>
+
+            <p><a class="nhsuk-u-margin-right-4" href="#">Print patient letter</a> <a href="#">Send patient letter</a></p>
       </div>
 
 
-    </dl>
+    
 
   </div>
 
@@ -267,11 +271,39 @@ NHS e-referral Service
 
     <h2>Referral details</h2>
     <p class="nhsuk-body"><strong>Attachments</strong></p>
-    <p class="nhsuk-body">You have no attachments to view</p>
+    <div class="panel panel-border-wide alert-default">
+        <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3">
+            Referral details have been added through your GP clinical system. 
+        </h2>
+  
+      </div>
+  
     <p class="nhsuk-body"><a href="">Add an attachment</a></p>
+    <table class="nhsuk-table">
 
+        <thead class="nhsuk-table__head">
+          <tr class="nhsuk-table__row">
+            <th class="nhsuk-table__header" scope="col">File</th>
+            <th class="nhsuk-table__header" scope="col">Description</th>
+            <th class="nhsuk-table__header" scope="col">Added by</th>
+            <th class="nhsuk-table__header" scope="col">Date added</th>
+            <th class="nhsuk-table__header" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="nhsuk-table__body">
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell"><a href="">report.pdf</a></td>
+              <td class="nhsuk-table__cell ">Report of symptoms</td>
+              <td class="nhsuk-table__cell ">DIXON, Wasan (DR)</td>
+              <td class="nhsuk-table__cell ">19 October 2019</td>
+              <td class="nhsuk-table__cell "><a href="">Remove</a></td>
+            </tr>
+            </tbody>
+            </table>
     <h2>Additional requirements</h2>
     <p class="nhsuk-body"><a href="">Add an attachment</a></p>
+
+    
 
     <table class="nhsuk-table">
 
@@ -288,7 +320,7 @@ NHS e-referral Service
             <tr class="nhsuk-table__row">
               <td class="nhsuk-table__cell">Interpreter</td>
               <td class="nhsuk-table__cell ">Spanish translator required</td>
-              <td class="nhsuk-table__cell ">Booked</td>
+              <td class="nhsuk-table__cell ">Not yet booked</td>
               <td class="nhsuk-table__cell ">None</td>
               <td class="nhsuk-table__cell "><a href="">Remove</a></td>
             </tr>
