@@ -19,7 +19,7 @@
     "autosuggest-highlight": "^3.1.1",
     "basic-auth": "^2.0.1",
     "body-parser": "^1.18.3",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.27.10",
     "express": "^4.16.4",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0-beta.2",
