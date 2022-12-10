@@ -20,7 +20,7 @@
     "basic-auth": "^2.0.1",
     "body-parser": "^1.18.3",
     "browser-sync": "^2.26.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-clean": "^0.4.0",
